@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+/* Grid System For Page */
+.theme1{
+    display: grid;
+    grid-template-areas: 
+    "hd"
+    "sec"
+    "ft";
+}
+/*Login section*/
+.theme1 .sec1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.theme1 .login-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/kidcalc/assests/images/login-cars-theme.jpg);
+    background-size: cover;
+    background-position: -75px 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.theme1 .login{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    background-color: #1e1e1e;
+}
+.theme1 .login-txt{
+    color: #8be3eb;
+    font-size: 40px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.theme1 .user-input{
+    margin: 15px 0;
+}
+.theme1 .user-input label{
+    color: white;
+    font-size: 22px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.theme1 .user-input input{
+    border: none;
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.theme1 .user-name input{
+    margin-left: 15px;
+}
+.theme1 .user-age input{
+    margin-left: 33px;
+}
+.theme1 .user-theme select{
+    border: none;
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #686868;
+    margin-left: 5px;
+}
+.theme1 .form-submit{
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #8be3eb;
+    color: #1e1e1e;
+    transition: 0.5s ease;
+    border-radius: 8px;
+}
+.theme1 .form-submit:hover{
+    background-color: #8be3ebc2;
+}
+/*Calculation section*/
+.theme1 .sec2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/kidcalc/assests/images/cars-theme.jpg);
+    background-attachment: fixed;
+    background-position: 0px -150px;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.theme1 .calc-txt{
+    color: #8be3eb;
+    font-size: 50px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.theme1 .calc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 35px;
+}
+.theme1 .result-screen{
+    width: 100%;
+    height: 100px;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 25px 0 0;
+    border-radius: 12px 12px 0 0;
+}
+.theme1 .calc-buttons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+.theme1 .calc-but{
+    color: white;
+    background-color: #606060;
+    height: 50px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.theme1 .calc-but:hover{
+    background-color: #5a5a5a;
+}
+.theme1 .equal{
+    background-color: #8be3eb;
+    color: #1e1e1e;
+}
+.theme1 .equal:hover{
+    background-color: #79c5cc;
+}
+/*information bar section*/
+.theme1 .sec3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/kidcalc/assests/images/cars-theme.jpg);
+    background-attachment: fixed;
+    background-position: 0px -150px;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.theme1 .sec3 div:nth-child(1){
+    color: #8be3eb;
+    font-family: "Khula", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+.theme1 .sec3 div:nth-child(2){
+    color: white;
+    font-family: "Khula", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.theme1 .sec3 div:nth-child(2) span{
+    color: #8be3eb;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Medium Devices ( landscape tablets ) */
+@media (max-width : 992px) {
+    .theme1 .login-img{
+        background-position: -250px 0;
+    }
+    .theme1 .user-input input,
+    .theme1 .user-theme select{
+        width: 250px;
+    }
+    .theme1 .calc{
+        width: 70%;
+    }
+}
+/* Small Devices ( portrait tablets and large phones ) */
+@media (max-width : 768px){
+    .theme1 .sec1{
+        flex-direction: column;
+    }
+    .theme1 .login-img{
+        background-position: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .theme1 .login{
+        width: 100%;
+        height: 50%;
+        gap: 25px;
+    }
+    .theme1 .login-txt{
+        display: none;
+    }
+    .theme1 .user-input input,
+    .theme1 .user-theme select{
+        width: 400px;
+    }
+}
+/* Extra Small Devices ( phones ) */
+@media (max-width : 600px){
+    .theme1 .user-input input,
+    .theme1 .user-theme select{
+        width: 240px;
+    }
+    .theme1 .sec3 div:nth-child(1){
+        font-size: 25px;
+    }
+    .theme1 .sec3 div:nth-child(2){
+        font-size: 20px;
+    }
+}
+@media (max-width: 360px) {
+    .theme1 .user-input label{
+        font-size: 18px;
+    }
+    .theme1 .user-input input,
+    .theme1 .user-theme select{
+        width: 200px;
+        font-size: 14px;
+    }
+    .theme1 .sec3 div:nth-child(1){
+        font-size: 25px;
+    }
+    .theme1 .sec3 div:nth-child(2){
+        font-size: 20px;
+    }
+}

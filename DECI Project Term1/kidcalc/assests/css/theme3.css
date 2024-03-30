@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+/* Grid System For Page */
+.theme3{
+    display: grid;
+    grid-template-areas: 
+    "hd"
+    "sec"
+    "ft";
+}
+/*Login section*/
+.theme3 .sec1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.theme3 .login-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/kidcalc/assests/images/login-marvel-theme.jpg);
+    background-size: cover;
+    background-position: -275px 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.theme3 .login{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    background-color: #1e1e1e;
+}
+.theme3 .login-txt{
+    color: #ff6060;
+    font-size: 40px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.theme3 .user-input{
+    margin: 15px 0;
+}
+.theme3 .user-input label{
+    color: white;
+    font-size: 22px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.theme3 .user-input input{
+    border: none;
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.theme3 .user-name input{
+    margin-left: 15px;
+}
+.theme3 .user-age input{
+    margin-left: 33px;
+}
+.theme3 .user-theme select{
+    border: none;
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #686868;
+    margin-left: 5px;
+}
+.theme3 .form-submit{
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ff3e3e;
+    color: #fff;
+    transition: 0.5s ease;
+    border-radius: 8px;
+}
+.theme3 .form-submit:hover{
+    background-color: #ce3131;
+}
+/*Calculation section*/
+.theme3 .sec2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/kidcalc/assests/images/marvel-theme.jpg);
+    background-attachment: fixed;
+    background-position: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.theme3 .calc-txt{
+    color: #ff5757;
+    font-size: 50px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.theme3 .calc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 35px;
+}
+.theme3 .result-screen{
+    width: 100%;
+    height: 100px;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 25px 0 0;
+    border-radius: 12px 12px 0 0;
+}
+.theme3 .calc-buttons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+.theme3 .calc-but{
+    color: white;
+    background-color: #606060;
+    height: 50px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.theme3 .calc-but:hover{
+    background-color: #5a5a5a;
+}
+.theme3 .equal{
+    background-color: #8be3eb;
+    color: #1e1e1e;
+}
+.theme3 .equal:hover{
+    background-color: #79c5cc;
+}
+/*information bar section*/
+.theme3 .sec3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/kidcalc/assests/images/marvel-theme.jpg);
+    background-attachment: fixed;
+    background-position: 0;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.theme3 .sec3 div:nth-child(1){
+    color: #ff5757;
+    font-family: "Khula", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+.theme3 .sec3 div:nth-child(2){
+    color: white;
+    font-family: "Khula", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.theme3 .sec3 div:nth-child(2) span{
+    color: #ff5757;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Medium Devices ( landscape tablets ) */
+@media (max-width : 992px) {
+    .theme3 .login-img{
+        background-position: -250px 0;
+    }
+    .theme3 .user-input input,
+    .theme3 .user-theme select{
+        width: 250px;
+    }
+    .theme3 .calc{
+        width: 70%;
+    }
+}
+/* Small Devices ( portrait tablets and large phones ) */
+@media (max-width : 768px){
+    .theme3 .sec1{
+        flex-direction: column;
+    }
+    .theme3 .login-img{
+        background-position: 0;
+        width: 100%;
+        height: 50%;
+    }
+    .theme3 .login{
+        width: 100%;
+        height: 50%;
+        gap: 25px;
+    }
+    .theme3 .login-txt{
+        display: none;
+    }
+    .theme3 .user-input input,
+    .theme3 .user-theme select{
+        width: 400px;
+    }
+}
+/* Extra Small Devices ( phones ) */
+@media (max-width : 600px){
+    .theme3 .user-input input,
+    .theme3 .user-theme select{
+        width: 240px;
+    }
+    .theme3 .sec3 div:nth-child(1){
+        font-size: 25px;
+    }
+    .theme3 .sec3 div:nth-child(2){
+        font-size: 20px;
+    }
+}
+@media (max-width: 360px) {
+    .theme3 .user-input label{
+        font-size: 18px;
+    }
+    .theme3 .user-input input,
+    .theme3 .user-theme select{
+        width: 200px;
+        font-size: 14px;
+    }
+    .theme3 .sec3 div:nth-child(1){
+        font-size: 25px;
+    }
+    .theme3 .sec3 div:nth-child(2){
+        font-size: 20px;
+    }
+}
